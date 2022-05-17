@@ -1,0 +1,21 @@
+rint("welcome to Riding Park 😍😍")
+height = int(input("what is your height ? "))
+age = int(input("what is your age ? "))
+if height >= 120:
+    print("yes you can ride ")
+    if age >= 18:
+        bill = 12
+        print("you have to pay $12")
+    elif age > 12:
+        bill = 7
+        print("you have to pay $7")
+    elif age < 12:
+        bill = 5
+        print("you have to pay $5")
+
+    want_photo = input("do you want to take photo Y or N ").upper()
+    if want_photo == "Y":
+        bill += 3
+        print(f"you have to pay total $ {bill}")
+else:
+    print("sorry, you have to tall more ")
